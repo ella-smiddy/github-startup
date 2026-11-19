@@ -1,83 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI+Design Studio Command Center</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ella Smiddy’s design research on simplifying morning outfit planning.">
+  <title>Get Dressed, Faster | Ella Smiddy</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<!--
-  THIS IS YOUR DASHBOARD. GitHub Pages serves this file.
-  Replace the placeholder text below with the real content from your
-  AI+Design Studio Command Center (Canvas: Project 2, Step 2).
-  KEEP OR TRIM: delete any <section> you did not build - all seven or a
-  subset is fine. Beginnings-level content is fine; this is the on-ramp,
-  not Project 5. Make it yours; do not leave it looking like a template.
--->
 <body>
-  <header class="site-header">
-    <p class="eyebrow">AI + Design Studio &#183; Command Center</p>
-    <h1 id="project-title">Your Project Title</h1>
-    <p class="tagline">One-line summary of what you are investigating &#8212; and your name.</p>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="hero">
+    <div class="wrap">
+      <div class="mast">
+        <strong>Ella Smiddy · Design research</strong>
+        <nav aria-label="Dashboard sections"><ul>
+          <li><a href="#sources">Sources</a></li>
+          <li><a href="#references">Reference images</a></li>
+          <li><a href="#log">Experiment log</a></li>
+          <li><a href="#workspace">Workspace</a></li>
+        </ul></nav>
+      </div>
+      <div class="hero-body">
+        <p class="eyebrow">Research question</p>
+        <h1>How might a wardrobe planner help people get dressed faster?</h1>
+        <p>I’m exploring how to make morning outfit decisions easier while letting people stay in control of what they wear.</p>
+      </div>
+    </div>
   </header>
-
-  <main class="container">
-
-    <!-- Project Identity Card -->
-    <section aria-labelledby="identity-h">
-      <h2 id="identity-h">Project Identity Card</h2>
-      <p>Title, curiosity statement, short summary, audience / context, and possible final direction(s).</p>
+  <main id="main" class="wrap">
+    <section id="sources" aria-labelledby="sources-title">
+      <h2 id="sources-title">Sources and notes</h2>
+      <div class="cards">
+        <article class="card"><h3><a href="https://whering.co.uk/faq/plan-outfit-in-planner">Whering’s outfit planner</a></h3><p>Whering documents how to schedule saved outfits and choose outfit suggestions in the Planner. I mapped the steps to find opportunities to make my own flow simpler. The relative speed still needs testing.</p></article>
+        <article class="card"><h3><a href="https://www.acloset.app/">Acloset</a></h3><p>Product materials document a digital closet, garment recognition, outfit suggestions, and calendar planning. App reviews in my notes raise questions about setup and finding saved looks.</p></article>
+        <article class="card"><h3><a href="https://www.nngroup.com/articles/recognition-and-recall/">Recognition and recall in interfaces</a></h3><p>Visible choices reduce the effort of remembering items from scratch. Showing saved outfit thumbnails in the weekly calendar lets people recognize a look when they need it.</p></article>
+      </div>
+      <aside class="finding" aria-labelledby="direction-title"><h3 id="direction-title">Design direction</h3><p>Show the day’s outfit close to the start, make a week of looks easy to scan, and let people swap one garment without rebuilding the outfit.</p></aside>
     </section>
-
-    <!-- Inquiry Brief -->
-    <section aria-labelledby="inquiry-h">
-      <h2 id="inquiry-h">Inquiry Brief</h2>
-      <p>Your research question, why it matters, what you need to learn, and 2&#8211;3 possible final outcomes.</p>
+    <section id="references" aria-labelledby="reference-title">
+      <h2 id="reference-title">Reference images</h2>
+      <div class="gallery"><figure class="featured">
+  <a href="images/moodboard.webp" aria-label="Visual direction (full image)"><img src="images/moodboard.webp" alt="Burgundy moodboard with cutout outfit flat lays, pink and pale green starbursts, color swatches, and bold CIAO lettering." width="1650" height="1060" loading="lazy"></a>
+  <figcaption><strong>Visual direction</strong><p>Burgundy anchors the palette. Orchid and pale green add color, and cutout pieces give the layout a fashion-editorial feel.</p></figcaption>
+</figure><figure>
+  <a href="images/get-dressed-faster.webp" aria-label="Get Dressed, Faster (full image)"><img src="images/get-dressed-faster.webp" alt="Infographic compares Acloset features, questions to test, and a proposed flow from Today to viewing an outfit, swapping one item, and saving." width="1448" height="1086" loading="lazy"></a>
+  <figcaption><strong>Get Dressed, Faster</strong><p>The concept brings together a Today view, a weekly calendar, and quick item swaps.</p></figcaption>
+</figure></div>
+      <details><summary>Explore the competitor screenshots and research artifacts</summary>
+      <div class="gallery"><figure>
+  <a href="images/feature-questions.webp" aria-label="Features and design questions (full image)"><img src="images/feature-questions.webp" alt="Table pairing digital closets, outfit calendars, and AI styling with questions about setup, planning, and control." width="1530" height="304" loading="lazy"></a>
+  <figcaption><strong>Features and design questions</strong><p>Three starting questions for evaluating existing tools.</p></figcaption>
+</figure>
+<figure>
+  <a href="images/verified-features.webp" aria-label="Acloset feature inventory (full image)"><img src="images/verified-features.webp" alt="Table of Acloset features and their strengths, including wardrobe imports, outfit suggestions, and calendar scheduling." width="1650" height="785" loading="lazy"></a>
+  <figcaption><strong>Acloset feature inventory</strong><p>A documented feature baseline for the comparison.</p></figcaption>
+</figure>
+<figure>
+  <a href="images/reported-friction.webp" aria-label="Reported friction (full image)"><img src="images/reported-friction.webp" alt="Table pairing app-review reports about setup, recommendations, and reliability with questions to test." width="1644" height="760" loading="lazy"></a>
+  <figcaption><strong>Reported friction</strong><p>User-reported issues suggest tasks to observe in a prototype.</p></figcaption>
+</figure>
+<figure>
+  <a href="images/hypotheses.webp" aria-label="Hypotheses and verification (full image)"><img src="images/hypotheses.webp" alt="Two-column table of five hypotheses and methods for checking them." width="1650" height="707" loading="lazy"></a>
+  <figcaption><strong>Hypotheses and verification</strong><p>Evaluate onboarding, personal preferences, and time to plan five outfits.</p></figcaption>
+</figure>
+<figure>
+  <a href="images/smart-registration.webp" aria-label="Smart Registration (full image)"><img src="images/smart-registration.webp" alt="Acloset graphic showing clothing photos converted into isolated garment images." width="1650" height="784" loading="lazy"></a>
+  <figcaption><strong>Smart Registration</strong><p>Cutouts keep individual pieces recognizable at small sizes.</p></figcaption>
+</figure>
+<figure>
+  <a href="images/calendar.webp" aria-label="Calendar and trip planning (full image)"><img src="images/calendar.webp" alt="Two Acloset phone screens show outfits on a calendar and in a trip plan." width="1650" height="756" loading="lazy"></a>
+  <figcaption><strong>Calendar and trip planning</strong><p>A reference for thumbnail density in the weekly view.</p></figcaption>
+</figure>
+<figure>
+  <a href="images/style-stats.webp" aria-label="Style Stats (full image)"><img src="images/style-stats.webp" alt="Two Acloset screens show a donut chart and a ranked list of clothing by cost per wear." width="1650" height="689" loading="lazy"></a>
+  <figcaption><strong>Style Stats</strong><p>A reference for making future experiment results easy to scan.</p></figcaption>
+</figure>
+<figure>
+  <a href="images/acloset-scale.webp" aria-label="Acloset in Numbers (full image)"><img src="images/acloset-scale.webp" alt="Four pink figures show Acloset’s reported users, digitized clothes, languages, and countries." width="1650" height="374" loading="lazy"></a>
+  <figcaption><strong>Acloset in Numbers</strong><p>The oversized figures make the metrics quick to scan.</p></figcaption>
+</figure>
+<figure>
+  <a href="images/source-quiz.webp" aria-label="Research quiz (full image)"><img src="images/source-quiz.webp" alt="NotebookLM quiz results show a score of eight out of eight above a list of Acloset questions." width="1034" height="1122" loading="lazy"></a>
+  <figcaption><strong>Research quiz</strong><p>A record of reviewing source material.</p></figcaption>
+</figure>
+<figure>
+  <a href="images/research-map.webp" aria-label="Research map (full image)"><img src="images/research-map.webp" alt="Flowchart connects slow morning outfit decisions to app research and a simpler weekly planner." width="1538" height="474" loading="lazy"></a>
+  <figcaption><strong>Research map</strong><p>The map connects the daily problem to the prototype direction.</p></figcaption>
+</figure>
+<figure>
+  <a href="images/wow-type.webp" aria-label="Expressive lettering (full image)"><img src="images/wow-type.webp" alt="Oversized red letters spell WOW! across a coral background." width="1200" height="848" loading="lazy"></a>
+  <figcaption><strong>Expressive lettering</strong><p>A reference for bold display type and confident accent colors.</p></figcaption>
+</figure></div></details>
     </section>
-
-    <!-- Source Starter List -->
-    <section aria-labelledby="sources-h">
-      <h2 id="sources-h">Source Starter List</h2>
-      <ul>
-        <li>Source 1 &#8212; title, creator, link, type, why it matters</li>
-        <li>Source 2 &#8212; title, creator, link, type, why it matters</li>
-        <li>Source 3 &#8212; optional</li>
-      </ul>
+    <section id="log" aria-labelledby="log-title">
+      <h2 id="log-title">Notes and experiment log</h2>
+      <ol class="log">
+        <li><time datetime="2026-11-04">November 4, 2026</time><h3>Mapped the problem and competitor features</h3><p>Compared wardrobe setup, calendars, and AI suggestions. Turned review comments into test questions about wardrobe setup, finding saved outfits, and personal style.</p></li>
+        <li><time datetime="2026-11-05">November 5, 2026</time><h3>Collected Acloset visual references</h3><p>Captured garment registration, calendar planning, and wardrobe statistics. The weekly calendar screenshots gave me a reference for showing outfits at a glance.</p></li>
+      </ol>
+      <aside class="finding"><h3>Next experiment</h3><p>Wireframe the Today screen and weekly calendar. See how easily someone can schedule a saved outfit and swap one item. Compare opening directly to the outfit with showing the date first. Record time, hesitation, and any backtracking.</p></aside>
     </section>
-
-    <!-- Project Brief / Weekly Roadmap -->
-    <section aria-labelledby="roadmap-h">
-      <h2 id="roadmap-h">Project Brief / Weekly Roadmap</h2>
-      <p>Weeks 5&#8211;11: goal, activities, tools, output, and success indicator for each week.</p>
-    </section>
-
-    <!-- Prompt Log -->
-    <section aria-labelledby="prompts-h">
-      <h2 id="prompts-h">Prompt Log</h2>
-      <p>Each entry: the prompt used, model / tool, output summary, and what changed afterward.</p>
-    </section>
-
-    <!-- Experiment Log -->
-    <section aria-labelledby="experiments-h">
-      <h2 id="experiments-h">Experiment Log</h2>
-      <p>Each experiment: what you tried, notes, what worked, what failed, and the next step.</p>
-    </section>
-
-    <!-- Links / Workspace Board -->
-    <section aria-labelledby="links-h">
-      <h2 id="links-h">Links / Workspace Board</h2>
-      <ul>
-        <li>Milanote / Notion / Figma board</li>
-        <li>AI tools used</li>
-        <li>Repo / site link</li>
-        <li>Working files (Figma, code, assets)</li>
-      </ul>
-    </section>
-
   </main>
-
-  <footer class="site-footer">
-    <p>DESN 374 &#183; Command Center &#183; built with the Interview &#8594; Brainstorm &#8594; Plan &#8594; Code &#8594; Commit workflow</p>
+  <footer id="workspace" class="workspace">
+    <section aria-labelledby="workspace-title" class="wrap">
+      <h2 id="workspace-title">Workspace links</h2>
+      <ul><li><a href="https://app.milanote.com/">Milanote research workspace</a></li><li><a href="https://github.com/ella-smiddy/github-startup">Dashboard source on GitHub</a></li></ul>
+    </section>
   </footer>
 </body>
 </html>
